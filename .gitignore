@@ -1,0 +1,9 @@
+.sass-cache/*
+
+node_modules/
+_templates/
+src/.sass-cache
+*.sublime-project
+*.sublime-workspace
+*.css.map
+*.DS_Store

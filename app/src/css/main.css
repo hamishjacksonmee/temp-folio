@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "aktivth";
+  src: url("../../dist/fonts/aktivgrotesk_std_th-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_th-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_th-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_th-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_th-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "aktivthit";
+  src: url("../../dist/fonts/aktivgrotesk_std_thit-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_thit-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_thit-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_thit-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_thit-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "aktivmd";
+  src: url("../../dist/fonts/aktivgrotesk_std_md-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_md-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_md-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_md-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_md-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "aktivbd";
+  src: url("../../dist/fonts/aktivgrotesk_std_bd-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_bd-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_bd-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_bd-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_bd-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "aktivblk";
+  src: url("../../dist/fonts/aktivgrotesk_std_blk-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_blk-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_blk-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_blk-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_blk-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "aktivblkit";
+  src: url("../../dist/fonts/aktivgrotesk_std_blkit-webfont.eot");
+  src: url("../../dist/fonts/aktivgrotesk_std_blkit-webfont.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/aktivgrotesk_std_blkit-webfont.woff2") format("woff2"), url("../../dist/fonts/aktivgrotesk_std_blkit-webfont.woff") format("woff"), url("../../dist/fonts/aktivgrotesk_std_blkit-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.mb-r {
+  margin-bottom: 0 !important; }
+
+.yellow {
+  color: #f6f930; }
+
+.maroon {
+  color: #3a1227; }
+
+.lt-maroon {
+  color: #73405b; }
+
+.font-italic {
+  font-family: "aktivthit", helvetica, arial, sans-serif; }
+
+.font-medium {
+  font-family: "aktivmd", helvetica, arial, sans-serif; }
+
+.font-bold {
+  font-family: "aktivbd", helvetica, arial, sans-serif; }
+
+.font-black {
+  font-family: "aktivblk", helvetica, arial, sans-serif; }
+
+.font-black-italic {
+  font-family: "aktivblkit", helvetica, arial, sans-serif; }
+
+.font-large {
+  font-size: 1.5em; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.hidden {
+  display: none !important; }
+
+@media screen and (max-width: 767px) {
+  .mobile-hidden {
+    display: none !important; } }
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none !important; } }
+html:not(.touch) .touch-only {
+  display: none; }
+
+.touch .non-touch {
+  display: none; }
+
+body, html {
+  background-color: #fff;
+  text-rendering: optimizeLegibility; }
+
+div {
+  box-sizing: border-box; }
+
+body {
+  font-family: "aktivth", helvetica, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4; }
+
+h1 {
+  font-size: 3em;
+  margin: 0; }
+
+h3 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.25; }
+
+p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none; }
