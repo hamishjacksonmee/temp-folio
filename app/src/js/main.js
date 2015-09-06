@@ -1,21 +1,36 @@
 
+function setDimensions() {
+
+  var windowW = $(window).innerWidth(),
+      windowH = $(window).innerHeight();
+
+  $('.container').css({
+    'height': windowH,
+    'width': windowW
+  });
+
+}
+
+
+
 // ----------------- Events & initialize functions
 
 $(function() {
-
-    // Global variables
 
     var $body = $('body');
 
     // Init Functions
 
+    setDimensions();
 
     // Events
 
-    // $(window).on('resize', function(){
-    //     setDimensions();
+    $('.enter-fake').click(function() {
+      $body.toggleClass('open');
+    });
 
-    // });
-
+    $(window).on('resize', function(){
+        setDimensions();
+    });
 
 });

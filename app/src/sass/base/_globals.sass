@@ -1,18 +1,16 @@
 // GLOBALS
 // -----------------
 
-body, html
-    // prevent horizontal scrolling
-    background-color: $white
-    text-rendering: optimizeLegibility
-
 div
     box-sizing: border-box
 
 body
     font-family: 'aktivth',helvetica, arial, sans-serif
-    font-size: 1em
+    font-size: 12px
     line-height: 1.4
+    background-color: $white
+    text-rendering: optimizeLegibility
+    color: $white
 
 h1
     font-size: 3em
@@ -28,9 +26,95 @@ p
     margin: 0
     font-size: 1em
     line-height: 1.4
+    letter-spacing: 1px
 
 a
     text-decoration: none
+    color: $white
+
+strong
+    font-family: 'aktivmd',helvetica, arial, sans-serif
+
+.container
+    overflow: hidden
+    +no-select
+
+.intro
+    +square(100px)
+    +position(absolute,50%,null,null,50%)
+    border-radius: 50%
+    background-color: $black
+    margin: -50px 0 0 -50px
+    transition: all 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955)
+
+    .open &
+        transform: scale(4)
+        top: 30px
+        left: 70%
+
+        +max-screen($small)
+            transform: scale(2)
+            top: 50%
+            left: 50%
+
+
+.page-wrap
+    +square(100%)
+    padding: 30px
+
+    +max-screen($medium)
+        padding: 20px
+
+.inner-wrap
+    +square(100%)
+    background-color: rgba(77,77,77,0.9)
+    position: relative
+    transform: scale(0.9)
+    opacity: 0
+    transition: all 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955)
+
+    .open &
+        transform: scale(1)
+        opacity: 1
+
+.top-left
+    +position(absolute,45px,null,null,45px)
+
+    +max-screen($small)
+        left: 30px
+
+.mid
+    +position(absolute,null,null,140px,45px)
+    font-size: 1.4rem
+
+    +max-screen($small)
+        font-size: 1rem
+        top: 140px
+        left: 30px
+        bottom: auto
+
+.bottom-left
+    +position(absolute,null,null,45px,45px)
+
+    +max-screen($small)
+        left: 30px
+
+.bottom-right
+    +position(absolute,null,45px,45px)
+
+    +max-screen($small)
+        bottom: 140px
+        left: 30px
+        right: auto
+
+.enter-fake
+    +square(100px)
+    +position(absolute,50%,null,null,50%)
+    border-radius: 50%
+    margin: -50px 0 0 -50px
+    cursor: pointer
+    z-index: 2
+
 
 
 

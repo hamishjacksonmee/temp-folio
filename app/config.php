@@ -13,7 +13,7 @@ else
 
 // Global variables, SMTP init, errors display
 if (IS_DEVELOPMENT) {
-  define('PATH', '/rjm_2015/app/');
+  define('PATH', '/temp-folio/app/');
   define('EMAIL', 'hamishjacksonmee@yahoo.co.nz');
 
   // Errors display
@@ -21,7 +21,7 @@ if (IS_DEVELOPMENT) {
   ini_set('display_errors', 'on');
 
 } elseif (IS_STAGING) {
-  define('PATH', 'http://staging.itshamish.com/jacksonmee.com/');
+  define('PATH', 'http://itshamish.com/');
   define('EMAIL', 'hamishjacksonmee@yahoo.co.nz');
 
 } else {
@@ -38,10 +38,6 @@ if (IS_DEVELOPMENT) {
   $css_path = PATH.'src/css/';
   $assets['javascripts'] = array(
     $js_path.'vendor/1.jquery-1.11.1.min.js',
-    $js_path.'vendor/2.CSSPlugin.min.js',
-    $js_path.'vendor/3.EasePack.min.js',
-    $js_path.'vendor/4.TweenLite.min.js',
-    $js_path.'vendor/5.slick.min.js',
     $js_path.'main.js'
   );
   $assets['stylesheets'] = array(
