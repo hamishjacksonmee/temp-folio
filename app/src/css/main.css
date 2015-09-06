@@ -211,7 +211,7 @@ strong {
   bottom: 45px; }
   @media screen and (max-width: 767px) {
     .bottom-right {
-      bottom: 140px;
+      bottom: 110px;
       left: 30px;
       right: auto; } }
 
