@@ -25,6 +25,7 @@ $view = isset($q[1]) && $q[1] != '' ? $q[1] : null;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
+
   <title>Hamish Jackson-Mee | Designer</title>
   <meta charset="utf-8">
 
@@ -62,32 +63,16 @@ $view = isset($q[1]) && $q[1] != '' ? $q[1] : null;
   <?php endforeach ?>
 
 </head>
-<body>
 
-  <div class="container">
-    <div class="intro"></div>
+<body class="open">
 
-    <div class="page-wrap">
-      <div class="enter-fake"></div>
-      <div class="inner-wrap">
-        <p class="top-left"><strong>Hamish Jackson-Mee</strong></p>
-        <p class="mid">New Portfolio site is on its way.<br>
-        Grew tired of the old one.</p>
-        <p class="bottom-left"><strong>
-          <a href="mailto:contact@itshamish.com">contact@itshamish.com</a><br>
-          <a href="tel:+64210366352">+64 21 036 6352</a></strong>
-        </p>
-        <p class="bottom-right"><strong>Find me on</strong>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<a href="https://nz.linkedin.com/pub/hamish-jackson-mee/7b/b14/326" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-    </div>
-
-  </div>
+  <main class="container">
+    <?php if (is_file("views/$controller.php")) include("views/$controller.php"); ?>
+  </main>
 
   <?php foreach ($assets['javascripts'] as $file_path) : ?>
     <script type="text/javascript" src="<?php echo $file_path ?>"></script>
   <?php endforeach; ?>
-
 
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -98,5 +83,7 @@ $view = isset($q[1]) && $q[1] != '' ? $q[1] : null;
     ga('require','displayfeatures');
     ga('send', 'pageview');
   </script>
+
 </body>
+
 </html>
