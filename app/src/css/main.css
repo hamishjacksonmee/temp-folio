@@ -221,7 +221,7 @@ strong {
   background-color: purple;
   overflow: hidden; }
 
-.outer-circle-wrap {
+.circle {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -229,31 +229,34 @@ strong {
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%); }
-
-.outer-circle {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
+          transform: translateX(-50%) translateY(-50%);
   border-radius: 50%;
-  border: 2px white solid;
   overflow: hidden; }
 
-.outer-circle-image {
-  position: absolute;
-  top: 0;
-  left: 0; }
+.outer-circle {
+  border: 1px white solid; }
 
-.inner-circle-wrap {
+.middle-circle {
+  border: 1px #f6f930 solid; }
+
+.image-holder {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 150px; }
+  opacity: 0; }
+  .image-holder.slide-1 {
+    background: url("../../dist/images/slide1.jpg") no-repeat center center; }
+  .image-holder.slide-2 {
+    background: url("../../dist/images/slide2.jpg") no-repeat center center; }
+  .image-holder.active {
+    opacity: 1; }
 
-.inner-circle {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px white solid; }
+.slider-nav {
+  position: absolute;
+  top: 50px;
+  right: 50px; }
+
+.slider-previous {
+  padding-right: 20px; }

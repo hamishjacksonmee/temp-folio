@@ -6,26 +6,34 @@
   background-color: purple
   overflow: hidden
 
-.outer-circle-wrap
+.circle
   +centerT
-
-.outer-circle
-  position: relative
-  width: 100%
-  padding-bottom: 100%
   border-radius: 50%
-  border: 2px white solid
   overflow: hidden
 
-.outer-circle-image
-  +position(absolute, 0, null, null, 0)
+.outer-circle
+  border: 1px white solid
 
-.inner-circle-wrap
-  +position(absolute, 0, null, null, 0)
-  +square(100%)
-  padding: 150px
+.middle-circle
+  border: 1px $yellow solid
 
-.inner-circle
+.image-holder
   +square(100%)
-  border-radius: 50%
-  border: 2px white solid
+  +position(absolute,0,null,null,0)
+  opacity: 0
+
+  &.slide-1
+    background: url('#{$imagePath}slide1.jpg') no-repeat center center
+
+  &.slide-2
+    background: url('#{$imagePath}slide2.jpg') no-repeat center center
+
+  &.active
+    opacity: 1
+
+
+.slider-nav
+  +position(absolute,50px,50px)
+
+.slider-previous
+  padding-right: 20px
